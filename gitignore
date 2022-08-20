@@ -85,9 +85,10 @@ results/*
 
 # sphinx documentation:
 _build
+.ipynb_checkpoints
 
 /abt_vars.txt
-/config.yaml
+
 preprocessing.ipynb
 /var_def.csv
 .vscode
