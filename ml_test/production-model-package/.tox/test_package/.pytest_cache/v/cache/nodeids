@@ -1,0 +1,4 @@
+[
+  "tests/test_features.py::test_check_feats",
+  "tests/test_prediction.py::test_make_prediction"
+]

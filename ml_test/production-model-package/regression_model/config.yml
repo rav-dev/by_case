@@ -1,0 +1,68 @@
+# Package Overview
+package_name: regression_model
+
+# Data Files
+data_file: hour.csv
+test_data_file : hour_fraction.csv
+
+# Variables
+# The variable we are attempting to predict (bike count)
+target: cnt
+
+pipeline_name: regression_model
+pipeline_save_file: regression_model_output_v
+
+#dataset features
+features:
+  - instant
+  - dteday
+  - season
+  - yr
+  - mnth
+  - hr
+  - holiday
+  - weekday
+  - workingday
+  - weathersit
+  - temp
+  - atemp
+  - hum
+  - windspeed
+  - casual
+  - registered
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 0
+
+#randomforest regressor hyperparameters
+max_depth: 20
+min_samples_split: 4
+n_estimators: 20
+
+#features to drop
+ref_var:
+  - instant
+  - dteday
+  - weekday
+  - atemp
+  - casual
+  - registered
+
+# variables to robust scale
+numericals_robust_scale:
+  - temp
+  - hum
+  - windspeed
+
+#categorical variables
+categorical_vars:
+  - season
+  - yr
+  - mnth
+  - hr
+  - holiday
+  - workingday
+  - weathersit
