@@ -1,10 +1,11 @@
+#this is the pytest conftest module
 import pytest
 from sklearn.model_selection import train_test_split
 
 from regression_model.config.core import config
 from regression_model.processing.data_manager import load_dataset
 
-
+#various fixtures we are using in our tests 
 
 @pytest.fixture()
 def raw_training_data():
@@ -13,6 +14,7 @@ def raw_training_data():
 
 @pytest.fixture()
 def sample_input_data():
+    #test data file load
     return load_dataset(file_name=config.app_config.test_data_file)
 
 
