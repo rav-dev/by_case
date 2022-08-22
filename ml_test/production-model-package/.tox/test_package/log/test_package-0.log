@@ -1,7 +1,7 @@
 action: test_package, msg: getenv
 cwd: /Users/ravishaggarwal/Desktop/cs_itw/by/by_case/ml_test/production-model-package/.tox
 cmd: /usr/local/opt/python@3.9/bin/python3.9 -m virtualenv --no-download --python /usr/local/opt/python@3.9/bin/python3.9 test_package
-created virtual environment CPython3.9.13.final.0-64 in 808ms
+created virtual environment CPython3.9.13.final.0-64 in 843ms
   creator CPython3Posix(dest=/Users/ravishaggarwal/Desktop/cs_itw/by/by_case/ml_test/production-model-package/.tox/test_package, clear=False, no_vcs_ignore=False, global=False)
   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/ravishaggarwal/Library/Application Support/virtualenv)
     added seed packages: pip==22.2.2, setuptools==63.4.1, wheel==0.37.1

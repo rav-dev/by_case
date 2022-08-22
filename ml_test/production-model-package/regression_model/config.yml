@@ -51,6 +51,14 @@ ref_var:
   - casual
   - registered
 
+drop_cols:
+  - instant
+  - dteday
+  - weekday
+  - atemp
+  - casual
+  - registered
+
 # variables to robust scale
 numericals_robust_scale:
   - temp

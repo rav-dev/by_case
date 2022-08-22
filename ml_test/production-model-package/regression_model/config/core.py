@@ -1,7 +1,8 @@
+import typing as t
 from pathlib import Path
 from typing import Dict, List, Sequence
 
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 from strictyaml import YAML, load
 
 import regression_model
@@ -39,8 +40,24 @@ class ModelConfig(BaseModel):
     min_samples_split: int
     n_estimators: int
     ref_var: List[str]
+    drop_cols: Sequence[str]
     numericals_robust_scale: Sequence[str]
     categorical_vars: Sequence[str]
+    # allowed_target: List [str]
+
+    # @validator("target")
+    # def allowed_target(value, values):
+    #    allowed_target = values.get('allowed_target')
+    #    print('*'*10)
+    #    print(allowed_target)
+    #    print(value)
+    #    if value == allowed_target :
+    #        return value
+    #
+    #    raise ValueError(
+    #        f"the target parameter specified: {value}, "
+    #        f"is not in the allowed set: {allowed_target}"
+    #    )
 
 
 class Config(BaseModel):

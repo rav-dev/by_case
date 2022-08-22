@@ -29,44 +29,44 @@ Collecting isort==5.8.0
   Using cached isort-5.8.0-py3-none-any.whl (103 kB)
 Collecting mypy-extensions<0.5.0,>=0.4.3
   Using cached mypy_extensions-0.4.3-py2.py3-none-any.whl (4.5 kB)
-Collecting typed-ast<1.5.0,>=1.4.0
-  Using cached typed_ast-1.4.3-cp39-cp39-macosx_10_9_x86_64.whl (226 kB)
 Collecting typing-extensions>=3.7.4
   Using cached typing_extensions-4.3.0-py3-none-any.whl (25 kB)
+Collecting typed-ast<1.5.0,>=1.4.0
+  Using cached typed_ast-1.4.3-cp39-cp39-macosx_10_9_x86_64.whl (226 kB)
 Collecting pytz>=2017.3
   Using cached pytz-2022.2.1-py2.py3-none-any.whl (500 kB)
 Collecting python-dateutil>=2.7.3
   Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-Collecting scipy>=1.1.0
-  Using cached scipy-1.9.0-cp39-cp39-macosx_12_0_universal2.macosx_10_9_x86_64.whl (58.4 MB)
 Collecting threadpoolctl>=2.0.0
   Using cached threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Collecting scipy>=1.1.0
+  Using cached scipy-1.9.0-cp39-cp39-macosx_12_0_universal2.macosx_10_9_x86_64.whl (58.4 MB)
 Collecting statsmodels>=0.11.1
   Using cached statsmodels-0.13.2-cp39-cp39-macosx_10_9_x86_64.whl (9.6 MB)
 Collecting py>=1.8.2
   Using cached py-1.11.0-py2.py3-none-any.whl (98 kB)
-Collecting attrs>=19.2.0
-  Using cached attrs-22.1.0-py2.py3-none-any.whl (58 kB)
-Collecting iniconfig
-  Using cached iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
 Collecting toml
   Using cached toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting iniconfig
+  Using cached iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+Collecting attrs>=19.2.0
+  Using cached attrs-22.1.0-py2.py3-none-any.whl (58 kB)
 Collecting pluggy<2.0,>=0.12
   Using cached pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
 Collecting packaging
   Using cached packaging-21.3-py3-none-any.whl (40 kB)
-Collecting tomli>=1.1.0
-  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
 Collecting pathspec>=0.9.0
   Using cached pathspec-0.9.0-py2.py3-none-any.whl (31 kB)
-Collecting click>=8.0.0
-  Using cached click-8.1.3-py3-none-any.whl (96 kB)
+Collecting tomli>=1.1.0
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
 Collecting platformdirs>=2
   Using cached platformdirs-2.5.2-py3-none-any.whl (14 kB)
-Collecting pyflakes<2.4.0,>=2.3.0
-  Using cached pyflakes-2.3.1-py2.py3-none-any.whl (68 kB)
+Collecting click>=8.0.0
+  Using cached click-8.1.3-py3-none-any.whl (96 kB)
 Collecting pycodestyle<2.8.0,>=2.7.0
   Using cached pycodestyle-2.7.0-py2.py3-none-any.whl (41 kB)
+Collecting pyflakes<2.4.0,>=2.3.0
+  Using cached pyflakes-2.3.1-py2.py3-none-any.whl (68 kB)
 Collecting mccabe<0.7.0,>=0.6.0
   Using cached mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
 Collecting six>=1.5
