@@ -1,4 +1,4 @@
-# by_case
+# by_case - code in by_case/ml_test/
 This is the by_case repo created by Ravish Aggarwal
 
 - In this case I showed the transition from the research phase/POC phase in data science lifecycle to a MVP phase
