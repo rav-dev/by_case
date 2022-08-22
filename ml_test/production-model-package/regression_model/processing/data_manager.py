@@ -1,3 +1,6 @@
+#this module loads the data
+#loads and saves  the pipeline also remove the old pipeline
+
 import typing as t
 from pathlib import Path
 

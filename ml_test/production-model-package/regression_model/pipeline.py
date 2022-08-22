@@ -1,3 +1,7 @@
+#pipeline that runs and performs the tasks 
+# drop unnecessary features
+# encode the categorical features - one hoz encoding 
+# scale the  features - robust scaling
 from feature_engine.encoding import OneHotEncoder
 from feature_engine.imputation import (
     AddMissingIndicator,

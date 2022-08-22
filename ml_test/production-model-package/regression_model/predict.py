@@ -1,8 +1,7 @@
+#Check the prediction of the model
 import typing as t
-
 import numpy as np
 import pandas as pd
-
 from regression_model import __version__ as _version
 from regression_model.config.core import config
 from regression_model.processing.data_manager import load_pipeline

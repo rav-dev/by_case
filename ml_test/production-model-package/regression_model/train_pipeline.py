@@ -1,3 +1,5 @@
+#Splits the data into train and test 
+#trains the model by calling pipeline object 
 import numpy as np
 from config.core import config
 from pipeline import price_pipe

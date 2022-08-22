@@ -1,3 +1,4 @@
+#this module is to validate the data for the training
 from typing import List, Optional, Tuple
 
 import numpy as np
@@ -22,10 +23,6 @@ def drop_na_inputs(*, input_data: pd.DataFrame) -> pd.DataFrame:
 
 def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional[dict]]:
     """Check model inputs for unprocessable values."""
-
-    # convert syntax error field names (beginning with numbers)
-    # input_data.rename(columns=config.model_config.variables_to_rename, inplace=True)
-    # input_data["MSSubClass"] = input_data["MSSubClass"].astype("O")
     relevant_data = input_data[config.model_config.features].copy()
     validated_data = drop_na_inputs(input_data=relevant_data)
     errors = None
@@ -43,8 +40,9 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
     return validated_data, errors
 
 
-"""
+""""
 class BikeSharingDataInputSchema(BaseModel):
+    '''pydantic way to make sure what are the feature dataypes are required'''
     instant:Optional[int]
     dteday: Optional[object]
     season: Optional[int]

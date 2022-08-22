@@ -1,3 +1,5 @@
+#This module is reads the config.yml file 
+
 import typing as t
 from pathlib import Path
 from typing import Dict, List, Sequence
@@ -18,6 +20,7 @@ TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 class AppConfig(BaseModel):
     """
     Application-level config.
+    Pydantic usage to make sure the artifacts have the desired datatypes
     """
 
     package_name: str
@@ -30,6 +33,7 @@ class ModelConfig(BaseModel):
     """
     All configuration relevant to model
     training and feature engineering.
+    Pydantic usage to make sure the artifacts have the desired datatypes
     """
 
     target: str
@@ -43,21 +47,6 @@ class ModelConfig(BaseModel):
     drop_cols: Sequence[str]
     numericals_robust_scale: Sequence[str]
     categorical_vars: Sequence[str]
-    # allowed_target: List [str]
-
-    # @validator("target")
-    # def allowed_target(value, values):
-    #    allowed_target = values.get('allowed_target')
-    #    print('*'*10)
-    #    print(allowed_target)
-    #    print(value)
-    #    if value == allowed_target :
-    #        return value
-    #
-    #    raise ValueError(
-    #        f"the target parameter specified: {value}, "
-    #        f"is not in the allowed set: {allowed_target}"
-    #    )
 
 
 class Config(BaseModel):
