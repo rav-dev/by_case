@@ -42,6 +42,7 @@ class ModelConfig(BaseModel):
     numericals_robust_scale: Sequence[str]
     categorical_vars: Sequence[str]
 
+
 class Config(BaseModel):
     """Master config object."""
 

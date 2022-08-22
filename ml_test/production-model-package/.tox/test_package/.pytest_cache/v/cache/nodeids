@@ -1,4 +1,6 @@
 [
+  "tests/test_feat_drop.py::test_make_prediction",
   "tests/test_features.py::test_check_feats",
+  "tests/test_features.py::test_uname_presence",
   "tests/test_prediction.py::test_make_prediction"
 ]

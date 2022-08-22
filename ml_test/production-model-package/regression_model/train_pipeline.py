@@ -10,8 +10,10 @@ def run_training() -> None:
 
     # read training data
     data = load_dataset(file_name=config.app_config.data_file)
-    data[config.model_config.categorical_vars] = data[config.model_config.categorical_vars].astype(object)
-    
+    data[config.model_config.categorical_vars] = data[
+        config.model_config.categorical_vars
+    ].astype(object)
+
     # divide train and test
     X_train, X_test, y_train, y_test = train_test_split(
         data[config.model_config.features],  # predictors
@@ -25,8 +27,7 @@ def run_training() -> None:
 
     # persist trained model
     save_pipeline(pipeline_to_persist=price_pipe)
-    
+
 
 if __name__ == "__main__":
     run_training()
-
